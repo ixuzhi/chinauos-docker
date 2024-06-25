@@ -1,0 +1,79 @@
+[UnionTechOS-$releasever-ufu-AppStream]
+name = UnionTechOS $releasever ufu AppStream
+baseurl = https://enterprise-c-packages.chinauos.com/server-enterprise-c/ufu/kongzi/1050/AppStream/$basearch
+enabled = 1
+username=$auth_u
+password=$auth_p
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-uos-release
+gpgcheck = 1
+skip_if_unavailable = 1
+
+[UnionTechOS-$releasever-ufu-BaseOS]
+name = UnionTechOS $releasever ufu BaseOS
+baseurl = https://enterprise-c-packages.chinauos.com/server-enterprise-c/ufu/kongzi/1050/BaseOS/$basearch
+enabled = 1
+username=$auth_u
+password=$auth_p
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-uos-release
+gpgcheck = 1
+skip_if_unavailable = 1
+
+[UnionTechOS-$releasever-ufu-PowerTools]
+name = UnionTechOS $releasever ufu PowerTools
+baseurl = https://enterprise-c-packages.chinauos.com/server-enterprise-c/ufu/kongzi/1050/PowerTools/$basearch
+enabled = 1
+username=$auth_u
+password=$auth_p
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-uos-release
+gpgcheck = 1
+skip_if_unavailable = 1
+
+[UnionTechOS-$releasever-ufu-Plus]
+name = UnionTechOS $releasever ufu Plus
+baseurl = https://enterprise-c-packages.chinauos.com/server-enterprise-c/ufu/kongzi/1050/Plus/$basearch
+enabled = 1
+username=$auth_u
+password=$auth_p
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-uos-release
+gpgcheck = 1
+skip_if_unavailable = 1
+
+[UnionTechOS-$releasever-ufu-Kernel510]
+name = UnionTechOS $releasever ufu Kernel510
+baseurl = https://enterprise-c-packages.chinauos.com/server-enterprise-c/ufu/kongzi/1050/Kernel-510/$basearch
+enabled = 0
+username=$auth_u
+password=$auth_p
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-uos-release
+gpgcheck = 1
+skip_if_unavailable = 1
+
+[UnionTechOS-$releasever-ufu-Extras]
+name = UnionTechOS $releasever ufu Extras
+baseurl = https://enterprise-c-packages.chinauos.com/server-enterprise-c/ufu/kongzi/1050/Extras/$basearch
+enabled = 0
+username=$auth_u
+password=$auth_p
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-uos-release
+gpgcheck = 0
+skip_if_unavailable = 1
+
+[UnionTechOS-$releasever-ufu-Update]
+name = UnionTechOS $releasever ufu Update
+baseurl = https://enterprise-c-packages.chinauos.com/server-enterprise-c/ufu/kongzi/1050/Update/$basearch
+enabled = 1
+username=$auth_u
+password=$auth_p
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-uos-release
+gpgcheck = 0
+skip_if_unavailable = 1
+
+[UnionTechOS-$releasever-ufu-UFU]
+name = UnionTechOS $releasever ufu UFU
+baseurl = https://enterprise-c-packages.chinauos.com/server-enterprise-c/ufu/kongzi/1050/UFU/$basearch
+enabled = 1
+username=$auth_u
+password=$auth_p
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-uos-release
+gpgcheck = 0
+skip_if_unavailable = 1

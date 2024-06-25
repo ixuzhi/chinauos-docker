@@ -1,0 +1,3 @@
+SP_VERSION=1050 && docker buildx build --progress=plain --no-cache . -f uos_a.Dockerfile --platform=linux/amd64,linux/arm64 -t uos:${SP_VERSION}a --build-arg SP_VERSION=$SP_VERSION --pull --push 2>&1 | tee uos-$SP_VERSION-build.log
+SP_VERSION=1060 && docker buildx build --progress=plain --no-cache . -f uos_a.Dockerfile --platform=linux/amd64,linux/arm64 -t uos:${SP_VERSION}a --build-arg SP_VERSION=$SP_VERSION --pull --push 2>&1 | tee uos-$SP_VERSION-build.log
+SP_VERSION=1070 && docker buildx build --progress=plain --no-cache . -f uos_a.Dockerfile --platform=linux/amd64,linux/arm64 -t uos:${SP_VERSION}a --build-arg SP_VERSION=$SP_VERSION --pull --push 2>&1 | tee uos-$SP_VERSION-build.log

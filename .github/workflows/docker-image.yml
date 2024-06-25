@@ -1,0 +1,40 @@
+name: Publish Docker image
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build_and_push:
+    strategy:
+      matrix:
+        SP_VERSION: [1050, 1060, 1070]
+        OS_TYPE: [a,e]
+    name: Build and push
+    # runs-on: ubuntu-22.04
+    runs-on: self-hosted
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Set up QEMU
+        uses: docker/setup-qemu-action@v3
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: Log in to Docker Hub
+        uses: docker/login-action@v3
+        with:
+          username: ${{ vars.DOCKER_USERNAME }}
+          password: ${{ secrets.DOCKER_PASSWORD }}
+
+      - name: Build and push Docker image
+        uses: docker/build-push-action@v5
+        with:
+          platforms: linux/amd64,linux/arm64
+          context: .
+          build-args: |
+            SP_VERSION=${{ matrix.SP_VERSION }}
+          file: ./uos_${{matrix.OS_TYPE}}.Dockerfile
+          push: true
+          tags: |
+            ${{ vars.DOCKER_USERNAME }}/uos-server:${{ matrix.SP_VERSION }}${{matrix.OS_TYPE}}
+            ${{ vars.DOCKER_USERNAME }}/uos-server-${{ matrix.SP_VERSION }}${{matrix.OS_TYPE}}:latest

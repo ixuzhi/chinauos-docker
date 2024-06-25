@@ -1,0 +1,90 @@
+[UniontechOS-$releasever-AppStream]
+name = UniontechOS $releasever AppStream
+baseurl = https://enterprise-c-packages.chinauos.com/server-enterprise-c/kongzi/1050/AppStream/$basearch
+enabled = 0
+username=$auth_u
+password=$auth_p
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-uos-release
+gpgcheck = 1
+skip_if_unavailable = 1
+
+[UniontechOS-$releasever-BaseOS]
+name = UniontechOS $releasever BaseOS
+baseurl = https://enterprise-c-packages.chinauos.com/server-enterprise-c/kongzi/1050/BaseOS/$basearch
+enabled = 0
+username=$auth_u
+password=$auth_p
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-uos-release
+gpgcheck = 1
+skip_if_unavailable = 1
+
+[UniontechOS-$releasever-PowerTools]
+name = UniontechOS $releasever PowerTools
+baseurl = https://enterprise-c-packages.chinauos.com/server-enterprise-c/kongzi/1050/PowerTools/$basearch
+enabled = 0
+username=$auth_u
+password=$auth_p
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-uos-release
+gpgcheck = 1
+skip_if_unavailable = 1
+
+[UniontechOS-$releasever-Plus]
+name = UniontechOS $releasever Plus
+baseurl = https://enterprise-c-packages.chinauos.com/server-enterprise-c/kongzi/1050/Plus/$basearch
+enabled = 0
+username=$auth_u
+password=$auth_p
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-uos-release
+gpgcheck = 1
+skip_if_unavailable = 1
+
+[UniontechOS-$releasever-Kernel510]
+name = UniontechOS $releasever Kernel510
+baseurl = https://enterprise-c-packages.chinauos.com/server-enterprise-c/kongzi/1050/Kernel-510/$basearch
+enabled = 0
+username=$auth_u
+password=$auth_p
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-uos-release
+gpgcheck = 1
+skip_if_unavailable = 1
+
+[UniontechOS-$releasever-Extras]
+name = UniontechOS $releasever Extras
+baseurl = https://enterprise-c-packages.chinauos.com/server-enterprise-c/kongzi/1050/Extras/$basearch
+enabled = 0
+username=$auth_u
+password=$auth_p
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-uos-release
+gpgcheck = 0
+skip_if_unavailable = 1
+
+[UniontechOS-$releasever-Update]
+name = UniontechOS $releasever Update
+baseurl = https://enterprise-c-packages.chinauos.com/server-enterprise-c/kongzi/1050/Update/$basearch
+enabled = 0
+username=$auth_u
+password=$auth_p
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-uos-release
+gpgcheck = 0
+skip_if_unavailable = 1
+
+[UniontechOS-$releasever-HA]
+name = UniontechOS $releasever HighAvailability
+baseurl = https://enterprise-c-packages.chinauos.com/server-enterprise-c/kongzi/1050/HighAvailability/$basearch
+enabled = 0
+username=$auth_u
+password=$auth_p
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-uos-release
+gpgcheck = 1
+skip_if_unavailable = 1
+
+[UniontechOS-$releasever-OpenStack-U]
+name = UniontechOS $releasever OpenStack-Ussuri
+baseurl = https://enterprise-c-packages.chinauos.com/server-enterprise-c/kongzi/1050/OpenStack-U/$basearch
+enabled = 0
+username=$auth_u
+password=$auth_p
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-uos-release
+gpgcheck = 1
+skip_if_unavailable = 1
+

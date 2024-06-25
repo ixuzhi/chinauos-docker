@@ -1,0 +1,8 @@
+[UnionTechOS-Server-20]
+name=UnionTechOS-Server-20-$releasever
+baseurl=https://euler-packages.chinauos.com/server-euler/ufu/fuyu/$releasever/OS/$basearch
+enabled=1
+gpgcheck=1
+gpgkey=https://euler-packages.chinauos.com/server-euler/ufu/fuyu/$releasever/OS/$basearch/RPM-GPG-KEY-UnionTech
+username=$auth_u
+password=$auth_p
